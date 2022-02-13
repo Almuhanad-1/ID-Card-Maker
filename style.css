@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #3e497adc ;
+  color: #F0F0F0;
+  /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+  font-family: 'Inconsolata', monospace;
+}
+form {
+  /* border: 2px #F1D00A solid; */
+  box-shadow: 0 0 10px 2px #F1D00A, -12px 12px 10px 2px #000000  ;
+  max-width: 650px;
+  min-width: 250px;
+  text-align: center;
+  margin: 20px auto 20px;
+  padding: 10px 30px 50px;
+  background-color: #21325E;
+  border-radius: 20px;
+}
+form h1 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.8em;
+}
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+form input {
+  height: 35px;
+  width: 300px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-style: none;
+  border-radius: 4px;
+  padding: 10px;
+  outline: none;
+  /* background-color: #BBC5FC; */
+}
+ form input:focus:not(.get-btn, .reset-btn) {
+  box-shadow: 0 0 10px 2px #F1D00A  ;
+  height: 50px;
+  width: 400px;
+ }
+
+form .get-btn,
+form .reset-btn{
+  width: 400px;
+  height: 40px;
+  /* line-height: 0px; */
+
+}
+form .get-btn{
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border: 1.8px solid #04AA6D;
+  color: green;
+}
+form .get-btn:hover,
+form .get-btn:focus-visible {
+  background-color: #04AA6D;
+  color: white;
+}
+
+form .reset-btn {
+  border: 1.8px solid #f44336;
+  color: red;
+}
+
+form .reset-btn:hover,
+form .reset-btn:focus-visible {
+  background: #f44336;
+  color: white;
+}
+
+#idCardDiv {
+  font-size: 8px;
+}
+table {
+  margin: 50px auto;
+  min-width: 50em;
+  height: 28em;
+  background-color: #F1D00A;
+  color: #0f0f0f;
+  padding: 0 2em 3em;
+  border-radius: 2em;
+  border: 0.4em black solid;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+
+
+}
+/* table td {
+  font-size: 2.4em;
+} */
+table .full-name {
+  font-size: 3.5em;
+  font-weight: 800;
+  text-align: center;
+}
+table img {
+  width: 8em;
+  margin: 1em;
+  margin-right: 2em;
+  margin-left: 0;
+}
+table .card-image {
+  width: 8em;
+}
+
+td p {
+  margin: 0px 0 0 0.3em;
+  font-size: 2.4em;
+}
+
+#idCardDiv {
+  display: none;
+}
