@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="myForm">
+        <h1>Let's Create an ID Card!</h1>
+        <div>
+            <label>First Name:</label>
+            <input type="text" name="f-name" id="first-name">
+        </div>
+
+        <div>
+            <label>Last Name:</label>
+            <input type="text" name="l-name" id="last-name">
+        </div>
+
+        <div>
+            <label>Age:</label>
+            <input type="number" name="age" id="age">
+        </div>
+
+        <div>
+            <label>Phone Number:</label>
+            <input type="tel" name="phone-num" id="phone-num">
+        </div>
+
+        <div>
+            <label>Address:</label>
+            <input type="text" name="l-name" id="address">
+
+        </div>
+        <div>
+            <input type="button" onclick="idCard()" class="get-btn" value="Get ID card!">
+        </div>
+        <div>
+            <input type="reset" onclick="resetCard()" class="reset-btn" value="Reset">
+        </div>
+
+    </form>
+    <div id="idCardDiv">
+        <table>
+            <tr>
+                <td class="card-image"><img src="images/user.png" alt="user photo"></td>
+                <td id="post-full-name" class="full-name"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p id="post-age"></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p id="post-phone-number"></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p id="post-address"></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="jscode.js"></script>
+</body>
+
+</html>
