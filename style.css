@@ -6,12 +6,13 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 8px;
+  font-size: 8.3px;
 }
 body {
   margin: 0;
   /* background-color: #3e497adc ; */
-  background-image: linear-gradient(to right, #12224c, #022464, #00247b, #002292, #001ca7, #7304a2, #a70098, #cf008d, #fb2a6a, #ff6544, #ff9c1b, #f1d00a);
+  /* background-image: linear-gradient(to right, #12224c, #022464, #00247b, #002292, #001ca7, #7304a2, #a70098, #cf008d, #fb2a6a, #ff6544, #ff9c1b, #f1d00a); */
+  background-image: linear-gradient(to right, #12224c, #022464, #00247b, #002292,  #a70098, #cf008d, #fb2a6a, #ff6544, #ff9c1b);
   /* background-image: linear-gradient(to bottom, #21325e, #21325e, #21325e, #21325e, #21325e, #40386d, #603d77, #80407d, #c34877, #f3645d, #ff9536, #f1d00a); */
   /* background-image: linear-gradient(to bottom, #21325e, #213363, #213567, #21366c, #213771, #473a7a, #683a7e, #873a7d, #bb416c, #d85d51, #dd8736, #cab430); */
   color: #F0F0F0;
@@ -24,10 +25,12 @@ form {
   max-width: 65rem;
   min-width: 25rem;
   text-align: center;
-  margin: 2rem auto 2rem;
+  margin: 2rem auto 1rem;
   padding: 1rem 3rem 5rem;
   background-color: #21325E;
   border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 form h1 {
   font-family: 'Roboto Mono', monospace;
@@ -36,7 +39,9 @@ form h1 {
 form label {
   display: block;
   margin-bottom: 1rem;
-  font-size: 2.4rem;
+  font-size: 2.4rem; 
+  transition: .5s;
+
 }
 form input {
   height: 4rem;
@@ -48,12 +53,26 @@ form input {
   padding: 1rem;
   outline: none;
   /* background-color: #BBC5FC; */
+  transition: 0.5s;
+
 }
- form input:focus:not(.get-btn, .reset-btn) {
+form input:focus:not(.get-btn, .reset-btn) {
   box-shadow: 0 0 3px 1px #F1D00A  ;
   height: 5rem;
   width: 40rem;
- }
+}
+.input-group {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+input:focus + label {
+  font-size: 3rem;
+  color: #F1D00A;
+
+}
 
 form .get-btn,
 form .reset-btn{
